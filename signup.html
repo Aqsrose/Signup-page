@@ -1,0 +1,84 @@
+<html lang="en" dir="ltr">
+  <head>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<div class="login-box">
+  <h1 style="padding-top:170px">Sign Up</h1>
+  <form  class="form-horizontal" action="signup.php" method="post" enctype="multipart/form-data" >
+
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input  type='text' name="fullname"  placeholder="Full Name" id='name' /> </div>
+   <span class="text-danger" id="nmerror"></span>
+ 
+  <div class="textbox">
+    <i class="fas fa-box"></i>
+    <input type='text' name="email"  id='email' placeholder="e.g. admin@yahoo.com" /></div>
+                <span class="text-danger" id="eerror"></span>
+  
+<div class="textbox">
+    <i class="fas fa-user"></i>
+   <input type='text' name="username"  placeholder="UserName" id='uname'/> </div>
+                <span class="text-danger" id="uerror"></span>
+ 
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    
+                    <div class="">
+                        <input type='password' name="password"  id='password' placeholder="Password" />               
+                    </div>                     
+                        <i id="open" class="fa fa-eye fa-2x"></i>
+              <i id="closed" style="display: none" class="fa fa-eye-slash fa-2x"></i> 
+                   </div>
+                
+                <span class="text-danger" id="perror"></span>
+           
+  
+<div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type='password' name="cpassword"  id='confpass' placeholder="Confirm Password" />
+                </div><span class="text-danger" id="cperror" ></span>
+  
+
+<div class="textbox">
+    <i class="fas fa-user"></i>
+   <input type='radio' name="gender" value="male"/>Male   
+<input type='radio' name="gender" value="female"/>Female
+ </div>
+                
+
+
+                <div class="textbox">
+    <i class="fas fa-user"></i>
+   <input type='checkbox' name="chkbox[]" value="java"/> Java <br>
+<input type='checkbox' name="chkbox[]" value="C"/> C<br>
+<input type='checkbox' name="chkbox[]" value="python"/> python
+
+
+ </div>
+               
+                <div class="textbox">
+    <i class="fas fa-user"></i>
+   <input type='file' accept="image/jpeg" name="image" \/> </div>
+                <span class="text-danger" id="uerror"></span>
+
+
+
+
+    <center>  <div style="width:50%;">
+  <input  type="submit" value="SignUp" style="background-color:lightgrey;font-size:22px;color:black" class="btn btn-info"/>
+                         </div> </center>
+</div>
+</form>
+  </body>
+</html>
